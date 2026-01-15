@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #fff;
+  color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.main-container {
+  height: 600px;
+  width: 400px;
+  border: 2px solid #454444;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+
+.login-box button,
+.signup-box button {
+  margin-right: 14px;
+  height: 30px;
+  width: 70px;
+  color: #241e1e;
+  background-color: #ffffff80;
+  outline: none;
+  border: 1.8px solid #afb7af2d;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signup-btn {
+  box-shadow: 0px 0px 5px #484d48;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-block: 10px;
+}
+
+footer a {
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+img {
+  height: 19px;
+  width: 19px;
+}
+
+.email-password {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main div input,
+main div button {
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid rgba(159, 155, 155, 0.42);
+  border-radius: 20px;
+}
+
+.password-box {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 15px;
+}
+.email-para {
+  margin-inline: 15px;
+}
+
+.account-create {
+  margin-top: 15px;
+  background-color: #212121;
+  color: #fff;
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.login {
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.horizontal-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #302c2cb4;
+}
+
+.hr-line {
+  background-color: #a09696b4;
+  height: 1px;
+  width: 1000px;
+}
+
+.line-1 {
+  margin-inline: 10px;
+}
+
+.line-2 {
+  margin-inline: 10px;
+}
+
+.continue-cls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.continue-cls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #212121;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.continue-cls button img {
+  margin-right: 8px;
+}
+
+input {
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-img {
+  position: absolute;
+  top: 15px;
+  right: 26px;
+  cursor: pointer;
+}
+
+.password-input {
+  width: 95%;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 769px) and (min-width: 427px) {
+  .main-container {
+    height: 600px;
+    /* width: 100vw; */
+    border: none;
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-block: 30px;
+  }
+}
+
+@media (max-width: 426px) {
+  .main-container {
+    height: 600px;
+    width: 100vw;
+    border: none;
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-block: 30px;
+  }
+}
