@@ -1,0 +1,197 @@
+:root {
+  --color-header: linear-gradient(to left, #060610, #05050f);
+  --color-footer: linear-gradient(#0b0b1d, #0c0b1b);
+  --color-logo: linear-gradient(80deg, #833be8, #e147a1);
+  --font-size--primary: 1.4rem;
+  --font-family--primary: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header_btn--link:link, .header_btn--link:visited, .header_navigation--link:link, .header_navigation--link:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header {
+  font-family: sans-serif;
+  background-image: linear-gradient(to left, #060610, #05050f);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.3rem 0rem;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_logo--app {
+  font-size: 1.9rem;
+  background-image: var(--color-logo);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+}
+.header_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_navigation--link:link, .header_navigation--link:visited {
+  color: #b0aed0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1.3rem 1.5rem;
+  border-radius: 1.2rem;
+  transition: all 0.2s;
+}
+.header_navigation--link:link:not(:last-child), .header_navigation--link:visited:not(:last-child) {
+  margin-right: 0.4rem;
+}
+.header_navigation--active:link, .header_navigation--active:visited {
+  color: #833be8;
+  background-color: #110a26;
+}
+.header_navigation--link:hover, .header_navigation--link:active {
+  color: #833be8;
+  background-color: #110a26;
+}
+.header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  background-image: var(--color-logo);
+  height: 4rem;
+  width: 15rem;
+  transition: all 0.2s;
+}
+.header_btn--link:link, .header_btn--link:visited {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.header_btn:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0px 1.5px 20px rgba(131, 59, 232, 0.726);
+}
+
+.main {
+  height: 100vh;
+  background-color: red;
+}
+
+.footer {
+  font-family: var(--font-family--primary);
+  background-image: var(--color-footer);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0 3rem 0;
+  width: 60%;
+  gap: 6rem;
+}
+.footer_start {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer_start > * {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.footer_start--links {
+  margin-right: -3rem;
+}
+.footer_start--description {
+  align-self: center;
+}
+.footer_start--description_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_start--description_container--app {
+  font-size: 1.9rem;
+  background-image: var(--color-logo);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+}
+.footer_start--description_text {
+  color: #6f6ea0;
+}
+.footer_title--header {
+  color: #fff;
+}
+.footer_end {
+  color: #6f6ea0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 1.2rem;
+}
+.footer_end::before {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: rgba(131, 59, 232, 0.1843137255);
+  height: 1.2px;
+  position: absolute;
+  top: -25px;
+}
+.footer_list--container {
+  list-style-type: none;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_lists:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer_links:link, .footer_links:visited {
+  text-decoration: none;
+  color: #6f6ea0;
+  transition: all 0.3s;
+}
+.footer_links:hover, .footer_links:active {
+  color: #833be8;
+}
+.footer_title--header {
+  font-size: 1.5rem;
+}
+
+.login {
+  overflow: hidden;
+}
+
+.section_login {
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section_login--container {
+  background-color: #0d0a1c;
+  height: 400px;
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */

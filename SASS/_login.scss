@@ -1,0 +1,17 @@
+.login {
+  overflow: hidden;
+}
+
+.section_login {
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--container {
+    background-color: #0d0a1c;
+    height: 400px;
+    width: 200px;
+  }
+}
