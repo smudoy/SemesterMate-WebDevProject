@@ -21,6 +21,7 @@ $font-family--primary: var(--font-family--primary);
     display: flex;
     align-items: center;
     justify-content: center;
+
     &--app {
       font-size: calc($font-size--primary + 0.5rem);
       background-image: $color-logo;

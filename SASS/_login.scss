@@ -1,5 +1,11 @@
-.login {
-  overflow: hidden;
+%clearInputStyling {
+  border: none;
+  border-radius: 1.1rem;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  background-color: #111129;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .section_login {
@@ -10,8 +16,115 @@
   justify-content: center;
 
   &--container {
+    border-radius: 2.3rem;
     background-color: #0d0a1c;
-    height: 400px;
-    width: 200px;
+    width: 390px;
+    padding: 23px;
+    text-align: center;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+
+    &_title {
+      & > * {
+        color: $color-paragraph-small;
+      }
+    }
+
+    &_btn {
+      background-color: #000;
+      width: 100%;
+      border-radius: 1rem;
+      display: flex;
+      padding-block: 0.5rem;
+
+      & > * {
+        border: none;
+        cursor: pointer;
+        padding: 1.3rem 6.3rem;
+        font-size: 1.3rem;
+        border-radius: 1.1rem;
+        font-weight: bold;
+        background-color: #000;
+        color: $color-paragraph-small;
+      }
+
+      &--active {
+        background-image: $color-logo;
+        color: #fff;
+      }
+    }
+
+    &_form {
+      & > input {
+        @extend %clearInputStyling;
+      }
+
+      & > label {
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+
+      & > input::placeholder {
+        background-color: #111129;
+        color: $color-paragraph-small;
+      }
+
+      & > select {
+        @extend %clearInputStyling;
+        color: #fff;
+
+        & > option {
+          width: 100%;
+          border: none;
+          color: #fff;
+
+          &:focus {
+            background-color: #1967d2;
+          }
+        }
+      }
+    }
+
+    &_submit {
+      width: 100%;
+
+      &--btn {
+        display: block;
+        background-image: $color-logo;
+        color: #fff;
+        border: none;
+        padding: 1.3rem 6.3rem;
+        border-radius: 1.1rem;
+        width: 100%;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      &--btn:hover {
+        transform: translateY(-1.5px);
+        box-shadow: 0px 1.5px 20px rgba(131, 59, 232, 0.726);
+      }
+    }
   }
+}
+
+p,
+label {
+  color: #fff;
+}
+
+label {
+  display: block;
+  color: $color-paragraph-small;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.submit_btn--login {
+  display: none;
 }

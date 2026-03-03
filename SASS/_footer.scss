@@ -1,4 +1,5 @@
 $color-footer: var(--color-footer);
+$color-paragraph-small: var(--color-paragraph-small);
 
 .footer {
   font-family: $font-family--primary;
@@ -48,7 +49,7 @@ $color-footer: var(--color-footer);
       }
 
       &_text {
-        color: #6f6ea0;
+        color: $color-paragraph-small;
       }
     }
   }
@@ -58,7 +59,7 @@ $color-footer: var(--color-footer);
   }
 
   &_end {
-    color: #6f6ea0;
+    color: $color-paragraph-small;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -92,7 +93,7 @@ $color-footer: var(--color-footer);
   &_links:link,
   &_links:visited {
     text-decoration: none;
-    color: #6f6ea0;
+    color: $color-paragraph-small;
     transition: all 0.3s;
   }
 
