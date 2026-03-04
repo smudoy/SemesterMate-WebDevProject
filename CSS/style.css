@@ -253,6 +253,10 @@ html {
 .section_login--container_form--passwordBox > input:focus {
   outline: 1.2px solid #51158c;
 }
+.section_login--container_form--passwordBox > input::placeholder {
+  background-color: #111129;
+  color: var(--color-paragraph-small);
+}
 .section_login--container_form > label {
   text-align: left;
   margin-bottom: 1rem;

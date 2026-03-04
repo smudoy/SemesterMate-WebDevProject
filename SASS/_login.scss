@@ -82,11 +82,17 @@
 
       &--passwordBox {
         position: relative;
+
         & > input {
           @extend %clearInputStyling;
 
           &:focus {
             outline: 1.2px solid #51158c;
+          }
+
+          &::placeholder {
+            background-color: #111129;
+            color: $color-paragraph-small;
           }
         }
       }
