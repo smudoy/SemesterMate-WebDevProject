@@ -1,5 +1,5 @@
 .login {
-  background-color: #212121;
+  background-image: linear-gradient(to bottom right, #0b081a, #060510);
 }
 
 %clearInputStyling {
@@ -37,6 +37,7 @@
     width: 46rem;
     padding: 3.6rem 3.2rem;
     text-align: center;
+    border: 1.5px solid #833be82f;
 
     &_header {
       display: flex;

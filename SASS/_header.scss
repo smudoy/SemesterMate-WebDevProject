@@ -11,7 +11,7 @@ $font-family--primary: var(--font-family--primary);
 
 .header {
   font-family: sans-serif;
-  background-image: linear-gradient(to left, #060610, #05050f);
+  background-image: $color-header;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -94,5 +94,7 @@ $font-family--primary: var(--font-family--primary);
 
   &_login {
     margin-bottom: 2.3rem;
+
+    border-bottom: 1.5px solid #833be82f;
   }
 }

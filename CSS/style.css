@@ -25,7 +25,7 @@ html {
 
 .header {
   font-family: sans-serif;
-  background-image: linear-gradient(to left, #060610, #05050f);
+  background-image: var(--color-header);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -91,6 +91,7 @@ html {
 }
 .header_login {
   margin-bottom: 2.3rem;
+  border-bottom: 1.5px solid rgba(131, 59, 232, 0.1843137255);
 }
 
 .main {
@@ -192,7 +193,7 @@ html {
 }
 
 .login {
-  background-color: #212121;
+  background-image: linear-gradient(to bottom right, #0b081a, #060510);
 }
 
 .section_login--container_form > select, .section_login--container_form--passwordBox > input, .section_login--container_form > input {
@@ -230,6 +231,7 @@ html {
   width: 46rem;
   padding: 3.6rem 3.2rem;
   text-align: center;
+  border: 1.5px solid rgba(131, 59, 232, 0.1843137255);
 }
 .section_login--container_header {
   display: flex;
