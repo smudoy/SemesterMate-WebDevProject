@@ -1,0 +1,19 @@
+.coloring {
+  background-image: $color-logo;
+  background-clip: text;
+  color: transparent;
+}
+
+.article {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #0b081a, #060510);
+  margin-top: 4rem;
+
+  &_header {
+    text-align: center;
+
+    &--h1 {
+      color: #fff;
+    }
+  }
+}
