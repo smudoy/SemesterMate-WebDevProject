@@ -179,7 +179,7 @@ html {
   font-size: 1.5rem;
 }
 
-.section_login--container_form > select, .section_login--container_form > input {
+.section_login--container_form > select, .section_login--container_form--passwordBox > input, .section_login--container_form > input {
   border: none;
   border-radius: 1.1rem;
   width: 100%;
@@ -187,11 +187,21 @@ html {
   background-color: #111129;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: #fff;
+  border: 1.2px solid rgb(42.495862069, 0, 85.98);
+}
+
+.eye_close, .eye_open {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  fill: rgba(255, 255, 255, 0.4196078431);
+  cursor: pointer;
 }
 
 .section_login {
   height: 100vh;
-  background-color: red;
+  background-color: #212121;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,24 +240,27 @@ html {
   background-image: var(--color-logo);
   color: #fff;
 }
-.section_login--container_form > label {
-  text-align: left;
-  margin-bottom: 1rem;
-}
 .section_login--container_form > input::placeholder {
   background-color: #111129;
   color: var(--color-paragraph-small);
 }
-.section_login--container_form > select {
-  color: #fff;
+.section_login--container_form > input:focus {
+  outline: 1.2px solid #51158c;
+}
+.section_login--container_form--passwordBox {
+  position: relative;
+}
+.section_login--container_form--passwordBox > input:focus {
+  outline: 1.2px solid #51158c;
+}
+.section_login--container_form > label {
+  text-align: left;
+  margin-bottom: 1rem;
 }
 .section_login--container_form > select > option {
   width: 100%;
   border: none;
   color: #fff;
-}
-.section_login--container_form > select > option:focus {
-  background-color: #1967d2;
 }
 .section_login--container_submit {
   width: 100%;
@@ -285,6 +298,13 @@ p {
 
 .submit_btn--login {
   display: none;
+}
+
+.eye_open {
+  z-index: -2;
+}
+.eye_close {
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

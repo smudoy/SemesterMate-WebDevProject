@@ -6,11 +6,21 @@
   background-color: #111129;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: #fff;
+  border: 1.2px solid darken(#2b0057, 0.2%);
+}
+
+%eyeButtonPosition {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  fill: #ffffff6b;
+  cursor: pointer;
 }
 
 .section_login {
   height: 100vh;
-  background-color: red;
+  background-color: #212121;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,6 +69,26 @@
     &_form {
       & > input {
         @extend %clearInputStyling;
+
+        &::placeholder {
+          background-color: #111129;
+          color: $color-paragraph-small;
+        }
+
+        &:focus {
+          outline: 1.2px solid #51158c;
+        }
+      }
+
+      &--passwordBox {
+        position: relative;
+        & > input {
+          @extend %clearInputStyling;
+
+          &:focus {
+            outline: 1.2px solid #51158c;
+          }
+        }
       }
 
       & > label {
@@ -66,23 +96,13 @@
         margin-bottom: 1rem;
       }
 
-      & > input::placeholder {
-        background-color: #111129;
-        color: $color-paragraph-small;
-      }
-
       & > select {
         @extend %clearInputStyling;
-        color: #fff;
 
         & > option {
           width: 100%;
           border: none;
           color: #fff;
-
-          &:focus {
-            background-color: #1967d2;
-          }
         }
       }
     }
@@ -127,4 +147,16 @@ p {
 
 .submit_btn--login {
   display: none;
+}
+
+.eye {
+  &_open {
+    z-index: -2;
+    @extend %eyeButtonPosition;
+  }
+
+  &_close {
+    z-index: 2;
+    @extend %eyeButtonPosition;
+  }
 }
