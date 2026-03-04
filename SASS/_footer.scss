@@ -2,6 +2,7 @@ $color-footer: var(--color-footer);
 $color-paragraph-small: var(--color-paragraph-small);
 
 .footer {
+  border-top: 1.5px solid #833be82f;
   font-family: $font-family--primary;
   background-image:
     linear-gradient(#0b0b1d, #0c0b1b), url(../IMG/Logo/LogoWithText.png);
