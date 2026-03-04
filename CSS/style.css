@@ -240,6 +240,11 @@ html {
   background-image: var(--color-logo);
   color: #fff;
 }
+.section_login--container_form {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .section_login--container_form > input::placeholder {
   background-color: #111129;
   color: var(--color-paragraph-small);
