@@ -9,12 +9,15 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1.3rem 0rem;
+  padding: 1rem 0rem;
 }
 .header_logo {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.header_logo--img {
+  height: 62px;
 }
 .header_logo--app {
   font-size: calc($font-size--primary + 0.5rem);

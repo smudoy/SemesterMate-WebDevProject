@@ -8,6 +8,7 @@
   margin-bottom: 1rem;
   color: #fff;
   border: 1.2px solid darken(#2b0057, 0.2%);
+  font-size: 1.3rem;
 }
 
 %eyeButtonPosition {
@@ -37,6 +38,7 @@
     }
 
     &_title {
+      font-size: 1.3rem;
       & > * {
         color: $color-paragraph-small;
       }
@@ -76,6 +78,7 @@
         &::placeholder {
           background-color: #111129;
           color: $color-paragraph-small;
+          font-size: 1.3rem;
         }
 
         &:focus {
@@ -96,6 +99,7 @@
           &::placeholder {
             background-color: #111129;
             color: $color-paragraph-small;
+            font-size: 1.3rem;
           }
         }
       }
@@ -140,18 +144,10 @@
   }
 }
 
-p,
-label {
-  color: #fff;
-}
-
 label {
   display: block;
   color: $color-paragraph-small;
-}
-
-p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .submit_btn--login {
