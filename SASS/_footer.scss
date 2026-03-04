@@ -3,7 +3,8 @@ $color-paragraph-small: var(--color-paragraph-small);
 
 .footer {
   font-family: $font-family--primary;
-  background-image: $color-footer;
+  background-image:
+    linear-gradient(#0b0b1d, #0c0b1b), url(../IMG/Logo/LogoWithText.png);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,10 +35,13 @@ $color-paragraph-small: var(--color-paragraph-small);
 
     &--description {
       align-self: center;
+      gap: 0.7rem;
+
       &_container {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: -10px;
 
         &--app {
           font-size: calc($font-size--primary + 0.5rem);
@@ -46,10 +50,15 @@ $color-paragraph-small: var(--color-paragraph-small);
           color: transparent;
           font-weight: bolder;
         }
+
+        &--logo {
+          height: 6.2rem;
+        }
       }
 
       &_text {
         color: $color-paragraph-small;
+        text-align: left;
       }
     }
   }

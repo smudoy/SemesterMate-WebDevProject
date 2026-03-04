@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SemesterMoon | All-in-One Student Study Hub | Notes, Playlists & Articles</title>
+    <link rel="shortcut icon" href="../IMG/FavIcon/LogowithoutText.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/style.css">
 
 </head>
 
 <body class="login">
-    <header class="header">
+    <header class="header header_login">
         <div class="header_logo">
             <img src="../IMG/Logo/LogowithoutText.png" alt="SemesterMoon Logo" class="header_logo--img">
             <p class="header_logo--app">SemesterMoon</p>
@@ -31,28 +32,33 @@
     <section class="section_login">
         <div class="section_login--container">
             <div class="section_login--container_header">
-                <img src="" alt="">
+                <img src="../IMG/Logo/LogowithoutText.png" alt="SemesterMoon Logo"
+                    class="section_login--container_header--img">
                 <p class="header_logo--app">SemesterMoon</p>
             </div>
             <div class="section_login--container_title">
                 <p class="section_login--container_title--1">Welcome back! Log in to continue.</p>
-                <p class="section_login--container_title--2">Create your free account</p>
+                <p class="section_login--container_title--2">Create your account</p>
             </div>
 
             <div class="section_login--container_btn">
-                <button class="section_login--container_btn--1">Login</button>
-                <button class="section_login--container_btn--2 section_login--container_btn--active">Sign Up</button>
+                <button class="section_login--container_btn--1 section_login--container_btn--active">Login</button>
+                <button class="section_login--container_btn--2">Sign Up</button>
             </div>
             <form action="" class="section_login--container_form">
-                <label for="">Full Name</label>
-                <input type="text" placeholder="Your full name">
-                <label for="">Username</label>
-                <input type="text" placeholder="Set your username">
-                <label for="">Email</label>
-                <input type="email" placeholder="xyz@gmail.com">
-                <label for="">Password</label>
-                <div class="section_login--container_form--passwordBox">
-                    <input type="password" placeholder="Enter your password" class="password">
+                <label for="" class="section_login--container_form--fullName hideElement">Full Name</label>
+                <input type="text" placeholder="Your full name"
+                    class="section_login--container_form--fullNameInput hideElement">
+                <label for="" class="section_login--container_form--userName hideElement">Username</label>
+                <input type="text" placeholder="Set your username"
+                    class="section_login--container_form--userNameInput hideElement">
+                <label for="" class="section_login--container_form--Email">Email</label>
+                <input type="email" placeholder="xyz@gmail.com" class="section_login--container_form--EmailInput">
+                <label for="" class="section_login--container_form--password">Password</label>
+                <div
+                    class="section_login--container_form--passwordBox section_login--container_form--password_container">
+                    <input type="password" placeholder="Enter your password"
+                        class="section_login--container_form--passwordInput password">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                         class="eye_open eye_open--password">
                         <path
@@ -65,9 +71,12 @@
                             / class="">
                     </svg>
                 </div>
-                <label for="">Confirm Password</label>
-                <div class="section_login--container_form--passwordBox">
-                    <input type="password" placeholder="Confirm your password" class="confirm-password">
+                <label for="" class="section_login--container_form--confirmPassword hideElement">Confirm
+                    Password</label>
+                <div
+                    class="section_login--container_form--passwordBox section_login--container_form--confirmPassword_container hideElement">
+                    <input type="password" placeholder="Confirm your password"
+                        class="section_login--container_form--confirmPasswordInput confirm-password">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                         class="eye_open eye_open--password_confirmation">
                         <path
@@ -79,8 +88,8 @@
                             d="M19.604 2.562l-3.346 3.137c-1.27-.428-2.686-.699-4.243-.699-7.569 0-12.015 6.551-12.015 6.551s1.928 2.951 5.146 5.138l-2.911 2.909 1.414 1.414 17.37-17.035-1.415-1.415zm-6.016 5.779c-3.288-1.453-6.681 1.908-5.265 5.206l-1.726 1.707c-1.814-1.16-3.225-2.65-4.06-3.66 1.493-1.648 4.817-4.594 9.478-4.594.927 0 1.796.119 2.61.315l-1.037 1.026zm-2.883 7.431l5.09-4.993c1.017 3.111-2.003 6.067-5.09 4.993zm13.295-4.221s-4.252 7.449-11.985 7.449c-1.379 0-2.662-.291-3.851-.737l1.614-1.583c.715.193 1.458.32 2.237.32 4.791 0 8.104-3.527 9.504-5.364-.729-.822-1.956-1.99-3.587-2.952l1.489-1.46c2.982 1.9 4.579 4.327 4.579 4.327z" />
                     </svg>
                 </div>
-                <label for="">Semester</label>
-                <select name="" id="">
+                <label for="" class="section_login--container_form--semester hideElement">Semester</label>
+                <select name="" id="" class="section_login--container_form--options hideElement">
                     <option value="1st">1st</option>
                     <option value="2nd">2nd</option>
                     <option value="3rd">3rd</option>
@@ -92,8 +101,10 @@
                 </select>
             </form>
             <div class="section_login--container_submit">
-                <button class="section_login--container_submit--btn submit_btn--login">Login &rarr;</button>
-                <button class="section_login--container_submit--btn submit_btn--create">Crate account &rarr;</button>
+                <button class="section_login--container_submit--btn submit_btn--login active_submit--btn">Login
+                    &rarr;</button>
+                <button class="section_login--container_submit--btn submit_btn--create">Crate account
+                    &rarr;</button>
             </div>
         </div>
     </section>
